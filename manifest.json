@@ -1,0 +1,9 @@
+{
+    "id": "transfer-apple-voice-memos",
+    "name": "Transfer Apple Voice Memos",
+    "version": "1.0.0",
+    "minAppVersion": "0.15.0",
+    "description": "Transfers Apple Voice Memo transcripts into Daily Notes on startup.",
+    "author": "Paul Johnston",
+    "isDesktopOnly": true
+}
