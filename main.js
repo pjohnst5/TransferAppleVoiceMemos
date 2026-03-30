@@ -292,7 +292,7 @@ class TransferAppleVoiceMemosPlugin extends obsidian.Plugin {
 			if (timeStr) heading += ` - ${timeStr}`;
 
 			const bodyText = transcript || "*No transcript available.*";
-			const block = `\n## ${heading}\n${embed}\n${bodyText}\n`;
+			const block = `\n## ${heading}\n${embed}\n${bodyText}\n<!-- End of voice memo -->\n`;
 
 			if (existingFile && existingFile instanceof obsidian.TFile) {
 				await this.app.vault.append(existingFile, block);
