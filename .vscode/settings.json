@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^cp -r /Users/pauljohnston/Documents/TransferAppleVoiceMemos/\\{main\\.js,manifest\\.json\\} \"/Users/pauljohnston/Library/Mobile Documents/iCloud~md~obsidian/Documents/Obsidian/\\.obsidian/plugins/transfer-apple-voice-memos/\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}
