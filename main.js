@@ -195,7 +195,7 @@ function triggerVoiceMemosSync() {
 			if (err) {
 				console.log("Transfer Apple Voice Memos: Could not launch Voice Memos app", err);
 			}
-			setTimeout(resolve, 5000);
+			setTimeout(resolve, 10000);
 		});
 	});
 }
