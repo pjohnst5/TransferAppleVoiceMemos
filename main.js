@@ -311,6 +311,8 @@ class TransferAppleVoiceMemosPlugin extends obsidian.Plugin {
 			new obsidian.Notice(
 				`Voice Memos: ${added} added, ${skipped} skipped.`
 			);
+		} else {
+			new obsidian.Notice("Voice Memos: 0 imported.");
 		}
 		console.log(
 			`Transfer Apple Voice Memos: ${added} added, ${skipped} skipped, ${noTranscript} no transcript.`
