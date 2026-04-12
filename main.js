@@ -210,6 +210,7 @@ class TransferAppleVoiceMemosPlugin extends obsidian.Plugin {
 	}
 
 	async syncThenTransfer() {
+		new obsidian.Notice("Transferring voice memos...");
 		await triggerVoiceMemosSync();
 		await this.transferMemos();
 		try { execSync('osascript -e \'quit app "VoiceMemos"\''); } catch {}
