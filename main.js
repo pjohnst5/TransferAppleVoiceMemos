@@ -204,6 +204,12 @@ function triggerVoiceMemosSync() {
 
 class TransferAppleVoiceMemosPlugin extends obsidian.Plugin {
 	async onload() {
+		this.addCommand({
+			id: "transfer-voice-memos",
+			name: "Transfer Voice Memos",
+			callback: () => this.syncThenTransfer(),
+		});
+
 		this.app.workspace.onLayoutReady(() => {
 			this.syncThenTransfer();
 		});
